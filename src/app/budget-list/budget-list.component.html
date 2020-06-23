@@ -1,3 +1,14 @@
-<p>
-  budget-list works!
-</p>
+<section class="item-list">
+  <div class="item-list-container">
+    <div class="income-column">
+      <h1>Income</h1>
+      <app-budget-list-card [isIncome]="true"></app-budget-list-card>
+      <app-budget-list-card [isIncome]="true"></app-budget-list-card>
+    </div>
+    <div class="expense-column">
+      <h1>Expense</h1>
+      <app-budget-list-card [isIncome]="false"></app-budget-list-card>
+      <app-budget-list-card [isIncome]="false"></app-budget-list-card>
+    </div>
+  </div>
+</section>

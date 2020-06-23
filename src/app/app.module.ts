@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { AdditemComponent } from './additem/additem.component';
 import { BudgetListComponent } from './budget-list/budget-list.component';
+import { BudgetListCardComponent } from './budget-list/budget-list-card/budget-list-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainpageComponent,
     AdditemComponent,
-    BudgetListComponent
+    BudgetListComponent,
+    BudgetListCardComponent
   ],
   imports: [
     BrowserModule,

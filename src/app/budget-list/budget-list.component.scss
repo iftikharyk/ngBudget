@@ -1,0 +1,44 @@
+@import '../../custom.scss';
+
+.item-list {
+    display: flex;
+    padding: 50px;
+    border-top: 1px solid #ebebeb;
+    justify-content: center;
+    align-items: center;
+
+    .item-list-container {
+        display: flex;
+        max-width: 680px;
+        height: 100%;
+        width: 100%;
+
+        .income-column, .expense-column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 0;
+            flex-grow: 1;
+        
+            h1 {
+                font-size: 24px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        .income-column {
+            margin-right: 35px;
+
+            h1 {
+                color: $green;
+            }
+        }
+
+        .expense-column {
+
+            h1 {
+                color: $red;
+            }
+        }
+    }
+}
