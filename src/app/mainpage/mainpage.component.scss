@@ -5,7 +5,6 @@
     height: 60px;
     display: flex;
     background: linear-gradient(75deg, rgb(214, 180, 247), rgb(173, 203, 231));
-
     justify-content: center;
     align-items: center;
 
@@ -16,4 +15,44 @@
         text-transform: uppercase;
         color: $dark;
     }
+}
+
+.total-budget {
+    display: flex;
+    height: 250px;
+    background-color: $dark;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 58px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        color: #fff;
+
+        &.green {
+            color: lighten($green, $amount: 12%);
+        }
+
+        &.red {
+            color: lighten($red, $amount: 12%);
+        }
+    }
+}
+
+.add-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .add-item-container {
+        width: 650px;
+    }
+}
+
+.item-list {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    border-top: 1px solid #ebebeb;
 }
